@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun connectAndGetApiData(){
 
-        val apiService: ApiService  = ApiClient.getClientInstance().create(ApiService :: class.java)
+        val apiService: ApiService  = ApiClient.apiService
         val call : Call<List<Data>> = apiService.getDetails()
         call.enqueue(object: Callback<List<Data>> {
             override fun onResponse(call: Call<List<Data>>, response: Response<List<Data>>) {
