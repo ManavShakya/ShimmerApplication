@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Shimmer</string>
+
+    <string-array name="Names">
+        <item>Jim Carrey</item>
+        <item>Michael B. Jordan</item>
+        <item>Robert Drowney Jr.</item>
+        <item>Paul Walker</item>
+        <item>Jake Gyllenhaal</item>
+        <item>Ryan Reynolds</item>
+        <item>Mark Wahlberg</item>
+        <item>Johny Depp</item>
+        <item>Nicholas Cage</item>
+        <item>Vin Diesel</item>
+        <item>Harrison Ford</item>
+        <item>Tom Hanks</item>
+        <item>Will Smith</item>
+        <item>Brad Pitt</item>
+        <item>Tom Cruise</item>
+    </string-array>
+
+    <string-array name="Location">
+        <item>New York</item>
+        <item>San Francisco</item>
+        <item>Delaware</item>
+        <item>Texas</item>
+        <item>California</item>
+        <item>Washington</item>
+        <item>Nevada</item>
+        <item>Ohio</item>
+        <item>St. Helens</item>
+        <item>London</item>
+        <item>Beijing</item>
+        <item>Newark</item>
+        <item>Amsterdam</item>
+        <item>New Orleans</item>
+        <item>Paris</item>
+    </string-array>
+</resources>
