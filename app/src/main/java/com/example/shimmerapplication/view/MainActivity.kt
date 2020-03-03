@@ -7,10 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sampleapp.model.Data
-import com.example.sampleapp.rest.apiService
+import com.example.sampleapp.rest.ApiService
 import com.example.shimmerapplication.R
 import com.example.shimmerapplication.adapter.RecyclerAdapter
-import com.example.shimmerapplication.rest.apiClient
+import com.example.shimmerapplication.rest.ApiClient
 import com.facebook.shimmer.ShimmerFrameLayout
 import retrofit2.Call
 import retrofit2.Callback
@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun connectAndGetApiData(){
 
-        val newService: apiService  = apiClient.getClient()
-        val call : Call<List<Data>> = newService.getDetails()
+        val apiService: ApiService  = ApiClient.getClientInstance().create(ApiService :: class.java)
+        val call : Call<List<Data>> = apiService.getDetails()
         call.enqueue(object: Callback<List<Data>> {
             override fun onResponse(call: Call<List<Data>>, response: Response<List<Data>>) {
                 val data: List<Data>  = response.body()

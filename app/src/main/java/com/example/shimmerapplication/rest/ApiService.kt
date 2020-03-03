@@ -4,7 +4,7 @@ import com.example.sampleapp.model.Data
 import retrofit2.Call
 import retrofit2.http.GET
 
-interface apiService {
+interface ApiService {
     @GET("users")
     fun getDetails(): Call<List<Data>>
 }
